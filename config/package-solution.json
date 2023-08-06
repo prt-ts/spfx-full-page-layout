@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "layout-example-client-side-solution",
+    "id": "8fa88a28-5cf4-49b0-8645-eefab0f6c430",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.17.4"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "layout-example description"
+      },
+      "longDescription": {
+        "default": "layout-example description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "layout-example Feature",
+        "description": "The feature that activates elements of the layout-example solution.",
+        "id": "efa4eaa7-2d9c-4f79-bc83-da2a2ac81fdd",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/layout-example.sppkg"
+  }
+}
