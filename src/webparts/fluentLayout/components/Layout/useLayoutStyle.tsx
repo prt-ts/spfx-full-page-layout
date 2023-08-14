@@ -66,7 +66,9 @@ export const useLayoutStyle = makeStyles({
         },
 
         "@media only screen and (max-width: 1024px)": {
-            width: "1rem"
+            width: "1rem",
+            animationDuration : tokens.durationSlow, 
+            animationTimingFunction: tokens.curveDecelerateMid
         }
 
     },

@@ -17,6 +17,7 @@
     "@fluentui/react-components": "^9.27.4",
     "@microsoft/sp-component-base": "1.17.4",
     "@microsoft/sp-core-library": "1.17.4",
+    "@microsoft/sp-list-subscription": "1.17.4",
     "@microsoft/sp-lodash-subset": "1.17.4",
     "@microsoft/sp-office-ui-fabric-core": "1.17.4",
     "@microsoft/sp-property-pane": "1.17.4",

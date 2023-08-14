@@ -10,16 +10,20 @@ import { IReadonlyTheme } from '@microsoft/sp-component-base';
 
 import * as strings from 'FluentLayoutWebPartStrings';
 import FluentLayout from './components/FluentLayout';
-import { IFluentLayoutProps } from './components/IFluentLayoutProps';
+import { IFluentLayoutProps } from './components/IFluentLayoutProps'; 
+import { setSubscriptionFactory } from './components/Layout/mainpage/MainPage';
 
 export interface IFluentLayoutWebPartProps {
   description: string;
 }
 
+
 export default class FluentLayoutWebPart extends BaseClientSideWebPart<IFluentLayoutWebPartProps> {
 
   private _isDarkTheme: boolean = false;
   private _environmentMessage: string = '';
+  
+  
 
   public render(): void {
     const element: React.ReactElement<IFluentLayoutProps> = React.createElement(
@@ -38,12 +42,13 @@ export default class FluentLayoutWebPart extends BaseClientSideWebPart<IFluentLa
 
   protected onInit(): Promise<void> {
 
-    const editbar = document.querySelector(".commandBarWrapper");
+    const edit_bar = document.querySelector(".commandBarWrapper");
 
-    if(editbar){
-      (editbar as HTMLElement).style.display = "none";
+    if(edit_bar){
+      (edit_bar as HTMLElement).style.display = "none";
     }
 
+    setSubscriptionFactory(this);
 
     return this._getEnvironmentMessage().then(message => {
       this._environmentMessage = message;
